@@ -1,81 +1,40 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+      <div class="navbar-header">
+        <a class="navbar-brand" routerLink="">Angular Forms</a>
+      </div>
+
+  <ul class="nav navbar-nav">
+    <li routerLinkActive="active">
+    <a routerLink="/templateForm">Form - Template Driven</a>
+    </li>
+    <li routerLinkActive="active">
+    <a routerLink="/dataForm">Form - Data Driven</a>
+    </li>
+  </ul>
+</div>
+</nav>
+
+<div class="container">
+<router-outlet></router-outlet>
+</div>
+
+
+
+
+
+
+
+
+
 <!-- <div style="text-align: center;">
 <h3>Pratica 1: To-do List Angular</h3>
 Adicione uma tarefa e o horário:
 <input [(ngModel)]="tarefa"type="text">
-<input [(ngModel)]="horario"  type="time">
+<input [(ngModel)]="horario"  type="text">
 <button (click)="adicionartarefa()"  class="btn btn-primary">Adicionar tarefa</button>
 <ul>
-  <li *ngFor="let tarefa of tarefas" > {{ tarefa }} </li>
-  <li *ngFor="let horario of horarios" > {{ horario }} </li>
-  
-
+  <li *ngFor="let tarefa of tarefas, horario of tarefas" > {{ tarefa.tarefas }} as {{ tarefa.horario }} </li>
 </ul>
-</div>
-
- quero adicionar uma tarefa e um horario, 
-assim que adicionar vai ter que listar em uma tabela abaixo -->
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-
-<div class="conteiner">
-
-  <div class="row">
-  <div class="col-md-12"> <!-- para criar uma div com a classe é so esverser assim: (.nomedaclasse) e da enter -->
-    <div class="card" style="text-align: center;">
-      <!-- <img src="..." class="card-img-top" alt="..."> para coocar uma imagem.-->
-      <div class="card-body">
-        <h5 class="card-title">To-do List Angular</h5>
-        <p class="card-text">Adicione as tarefas do dia:</p>
-        <div style="text-align: center;">
-          Adicione uma tarefa e o horário:
-          <input [(ngModel)]="tarefa"type="text">
-          <input [(ngModel)]="horario"  type="time">
-          <br>
-          <button (click)="adicionartarefa()"  class="btn btn-primary">Adicionar tarefa</button>
-          <ul>
-            <li *ngFor="let tarefa of tarefas" > {{ tarefa }} </li>
-            <li *ngFor="let horario of horarios" > {{ horario }} </li> 
-          </ul>
-          </div>
-      </div>
-    </div>
-  </div>
-  
-  </div>
-
-</div>
+</div> -->

@@ -7,20 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-tarefa : string ="";
-horario: string="";
 
-tarefas: Array<string> =[""]
+tarefa:string = "";
+horario = "";
+tarefas:any[] = [];
 
-horarios: Array<string> =[""]
 
-adicionartarefa(){
-  this.tarefas.push(this.tarefa,this.horario);
-  this.tarefa ="", this.horario="";
+adicionartarefa (){
+   const dados = { tarefas: this.tarefa, horario: this.horario }
+   this.tarefas.push(dados);
+   console.log(this.tarefas)
 }
-
-// adicionarhora(){
-//   this.horarios.push(this.horario);
-//   this.horario ="";
-// }
- }
+}
