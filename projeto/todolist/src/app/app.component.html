@@ -1,3 +1,4 @@
+                                 <!-- NAVEGADOR -->
   <nav class="navbar navbar-default">
     <div class="container-fluid">
 
@@ -22,7 +23,34 @@
     <router-outlet></router-outlet>
   </div>
 
+                        <!-- FORMULARIO COM REACTIVE FORMS -->
+  <form class="form-honrizontal" [formGroup]="formulario">
+    <div class="form-group">
+        <div class="col-sm-12">
+            <label for="nome" class="control-label">Nome</label>
+        </div>
+    
+      <div class="col-sm-12">
+        <input type="text" class="form-control"  name="nome"
+         id="nome" placeholder="nome" >
+      </div>
+    </div>
 
+    <div class="form-group">
+        <div class="col-sm-12">
+            <label for="email" class="control-label">Email</label>
+        </div>
+            <div class="col-sm-12">
+                 <input type="email" class="form-control" name="email"
+                    id="email" placeholder="nome@email.com">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+
+        <app-form-debug [form]="formulario">
+</form>
+
+                             <!-- TO-DO LIST -->
   <div style="text-align: center;">
   <h3>To-do List Angular</h3>
     <p>Adicione uma tarefa e o horário:</p>

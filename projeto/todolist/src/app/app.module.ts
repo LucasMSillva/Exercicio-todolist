@@ -8,6 +8,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { OutputPropertyComponent } from './output-property/output-property.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,9 +19,10 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
+    AppRoutingModule,
     DataFormModule
     
   ],
