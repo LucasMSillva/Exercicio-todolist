@@ -1,13 +1,7 @@
-import { DataFormComponent } from './data-form/data-form.component';
-import { TamplateFormComponent } from './tamplate-form/tamplate-form.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [
-{ path: 'templateForm', component: TamplateFormComponent },
-{ path: 'dataForm', component: DataFormComponent },
-{ path: '', pathMatch: 'full', redirectTo: 'TemplateForm' },
-];
+const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

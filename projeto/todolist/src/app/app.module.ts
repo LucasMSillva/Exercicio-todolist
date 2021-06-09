@@ -4,16 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
-import { TamplateFormComponent } from './tamplate-form/tamplate-form.component';
-import { DataFormComponent } from './data-form/data-form.component';
+
 import { OutputPropertyComponent } from './output-property/output-property.component';
+import { DataBindingComponent } from './data-binding/data-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TamplateFormComponent,
-    DataFormComponent,
-    OutputPropertyComponent
+    OutputPropertyComponent,
+    DataBindingComponent
   ],
   imports: [
     BrowserModule,
