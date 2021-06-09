@@ -1,11 +1,36 @@
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
 
-<div style="text-align: center;">
-<h3>Pratica 1: To-do List Angular</h3>
-Adicione uma tarefa e o horário:
-<input [(ngModel)]="tarefa"type="text">
-<input [(ngModel)]="horario"  type="text">
-<button (click)="adicionartarefa()"  class="btn btn-primary">Adicionar tarefa</button>
-<ul>
-  <li *ngFor="let tarefa of tarefas, horario of tarefas" > {{ tarefa.tarefas }} as {{ tarefa.horario }} </li>
-</ul>
-</div> 
+        <div class="navbar-header">
+          <a class="navbar-brand" routerLink="">Angular Forms</a>
+        </div>
+
+    <ul class="nav navbar-nav">
+      <li routerLinkActive="active">
+      <a routerLink="/templateForm">Form - Template Driven</a>
+      </li>
+      <li routerLinkActive="active">
+      <a routerLink="/dataForm">Form - Data Driven</a>
+      </li>
+    </ul>
+  </div>
+  </nav>
+
+
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+
+
+  <div style="text-align: center;">
+  <h3>To-do List Angular</h3>
+    <p>Adicione uma tarefa e o horário:</p>
+  <input [(ngModel)]="tarefa"type="text"> as
+  <input [(ngModel)]="horario"  type="time"><br><br>
+  <button (click)="adicionartarefa()"  class="btn btn-primary">Adicionar tarefa</button>
+  <ul>
+    <li *ngFor="let tarefa of tarefas, horario of tarefas" > {{ tarefa.tarefas }} as {{ tarefa.horario }} </li>
+  </ul>
+  </div>
+

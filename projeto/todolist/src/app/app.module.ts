@@ -1,9 +1,10 @@
+import { DataFormModule } from './data-form/data-form.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { OutputPropertyComponent } from './output-property/output-property.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
@@ -12,12 +13,16 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
   declarations: [
     AppComponent,
     OutputPropertyComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    DataFormModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
